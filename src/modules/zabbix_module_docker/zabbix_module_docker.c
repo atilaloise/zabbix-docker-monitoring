@@ -70,8 +70,10 @@ static ZBX_METRIC keys[] =
 /*      KEY                     FLAG            FUNCTION                TEST PARAMETERS */
 {
         {"docker.discovery", CF_HAVEPARAMS, zbx_module_docker_discovery,    "<parameter 1>, <parameter 2>, <parameter 3>"},
+        {"docker.servicediscovery", CF_HAVEPARAMS, zbx_module_docker_discovery,    "<parameter 1>, <parameter 2>, <parameter 3>"},
         {"docker.port.discovery", CF_HAVEPARAMS, zbx_module_docker_port_discovery, "full container id, <protocol>"},
         {"docker.inspect", CF_HAVEPARAMS, zbx_module_docker_inspect, "full container id, parameter 1, <parameter 2>"},
+        {"docker.serviceinspect", CF_HAVEPARAMS, zbx_module_docker_inspect, "full container id, parameter 1, <parameter 2>"},
         {"docker.cstatus", CF_HAVEPARAMS, zbx_module_docker_cstatus, "status"},
         {"docker.istatus", CF_HAVEPARAMS, zbx_module_docker_istatus, "status"},
         {"docker.vstatus", CF_HAVEPARAMS, zbx_module_docker_vstatus, "status"},
